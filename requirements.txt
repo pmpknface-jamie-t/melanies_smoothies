@@ -1,0 +1,18 @@
+definition_version: 2
+entities:
+  streamlit_app:
+    type: streamlit
+    identifier:
+      database: SMOOTHIES
+      schema: PUBLIC
+      name: SMOOTHIE_ORDER_FORM
+    title: smoothie_order_form
+    query_warehouse: COMPUTE_WH
+    compute_pool: SYSTEM_COMPUTE_POOL_CPU
+    run_mode: SpcsOnly
+    execute_as: OWNER
+    main_file: smoothie_order_form.py
+    artifacts:
+      - pyproject.toml
+      - smoothie_order_form.py
+      - .streamlit/config.toml
